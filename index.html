@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gyandeep Senior Secondary School has been nurturing young minds for over 30 years with holistic, value-based education. With a strong student-teacher ratio of 1:20, the school focuses on academic excellence, creativity, discipline, and moral values—preparing students to become responsible global citizens.">
+    <meta name="keywords" content="">
+
+    <!-- title -->
+    <title>GYAN DEEP SR. SEC. SCHOOL - A NEW GENERATION SCHOOL</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/gyandeep-logo.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Slider Styles -->
+    <style>
+        .image-slider-area {
+            position: relative;
+            padding: 60px 0;
+        }
+
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.6s ease;
+        }
+
+        .slide {
+            flex: 0 0 25%;
+            /* 4 images visible */
+            padding: 5px;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            /* ✅ clickable */
+            transition: transform 0.3s ease;
+        }
+
+        .slide img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Buttons */
+        .prev,
+        .next {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            border: none;
+            font-size: 24px;
+            padding: 8px 14px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+            z-index: 2;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Popup (Lightbox) */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .lightbox-close:hover {
+            color: #ddd;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .slide {
+                flex: 0 0 33.33%;
+                /* 3 visible */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .slide {
+                flex: 0 0 50%;
+                /* 2 visible */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slide {
+                flex: 0 0 100%;
+                /* 1 visible */
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <a href="application-form.html" class="admission-btn-vertical">Admission</a>
+
+    <a href="application-form.html" class="admission-btn-vertical">Admission</a>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-logo">
+            <img src="https://gyandeepschool.org/assets/img/logo/Logo-GDSSS.png" alt="School Logo">
+        </div>
+    </div>
+    <!-- preloader end -->
+
+    <!-- Popup Structure -->
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <button id="closePopup" class="close-btn">&times;</button>
+            <img src="assets/img/homepage/IMG_6650.PNG" alt="Admission Open" class="popup-image">
+            <a href="application-form.html" class="admission-btn">Apply for Admission</a>
+        </div>
+    </div>
+
+
+
+    <!-- header area -->
+    <header class="header">
+        <!-- header top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrap">
+                    <div class="header-top-left">
+                        <div class="header-top-social">
+                            <span>Follow Us: </span>
+                            <a href="https://www.facebook.com/GyanDeepSr.Sec.SchoolGurgaon/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@gyandeepsrsecschool" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="header-top-contact">
+                            <ul>
+                                <li>
+                                    <a href="index.html#"><i class="far fa-location-dot"></i> Sheetla Colony, Opp. Sector-5 Petrol
+                                        Pump, Gurgaon</a>
+                                </li>
+                                <!--<li>
+                                    <a href="https://live.themewild.com/cdn-cgi/l/email-protection#254c4b434a65405d44485549400b464a48"><i class="far fa-envelopes"></i> <span class="__cf_email__" data-cfemail="0b62656d644b6e736a667b676e25686466">query@gyandeepschool.org</span></a>
+                                </li>-->
+                                <li>
+                                    <a href="tel:+919711700513"><i class="far fa-phone-volume"></i> +91-9711700513</a>
+                                    <a href="tel:+917290007691"><i class="far fa-phone-volume"></i> +91-7290007691</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/Logo-GDSSS.png" alt="logo">
+                    </a>
+                    <div class="mobile-menu-right">
+                        <!--<div class="search-btn">
+                            <button type="button" class="nav-right-link search-box-outer"><i
+                                    class="far fa-search"></i></button>
+                        </div>-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="index.html#" data-bs-toggle="dropdown">About
+                                    Us</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="about.html">Gyan Deep Sr. Sec. School</a></li>
+                                    <li><a class="dropdown-item" href="about.html#why-gyandeep">Why Gyan Deep?</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="index.html#">The Managment</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="chairmans-message.html">Chairman</a></li>
+                                            <li><a class="dropdown-item" href="directors-message.html">Director</a></li>
+                                            <li><a class="dropdown-item" href="principals-message.html">Principal</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="from-managers-desk.html">Manager</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://drive.google.com/file/d/1q620hTy3XE8dIqYUcQOGww4hM0H_iGIL/view">CBSE
+                                            Information</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="facility.html">Facilities</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="Activities.html"
+                                    data-bs-toggle="dropdown">Student Life</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="Festivals.html">Festivals</a></li>
+                                    <li><a class="dropdown-item" href="Celebrations.html">Celebrations</a></li>
+                                    <li><a class="dropdown-item" href="Summer-Camp.html">Summer Camp</a></li>
+                                    <li><a class="dropdown-item" href="Diwali-Fair.html">Diwali Fair</a></li>
+                                    <li><a class="dropdown-item" href="Colour-Day-Celebration.html">Colour Day
+                                            Celebration</a></li>
+                                    <li><a class="dropdown-item" href="Assembly-Activities.html">Assembly Activities</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="talent-expo.html">Talent Expo</a></li>
+                                    <li><a class="dropdown-item" href="Inter-School-Activity.html">Inter School
+                                            Activity</a></li>
+                                    <li><a class="dropdown-item" href="Sports-Events.html">Sports Events</a></li>
+                                    <li><a class="dropdown-item" href="University-Fair.html">University Fair</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://heyzine.com/flip-book/296da6cb68.html" target="_blank">School
+                                    Magazine</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="nav-right">
+                            <!--<div class="search-btn">
+                                <button type="button" class="nav-right-link search-box-outer"><i
+                                        class="far fa-search"></i></button>
+                            </div>-->
+                            <div class="nav-right-btn mt-2">
+                                <a href="application-form.html" class="theme-btn"><span
+                                        class="fal fa-pencil"></span>Admission Enquiry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header area end -->
+
+
+    <!-- popup search -->
+    <div class="search-popup">
+        <button class="close-search"><span class="far fa-times"></span></button>
+        <form action="index.html#">
+            <div class="form-group">
+                <input type="search" name="search-field" placeholder="Search Here..." required>
+                <button type="submit"><i class="far fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- popup search end -->
+
+
+    <main class="main">
+
+        <!-- hero slider -->
+        <div class="hero-section">
+            <div class="hero-slider owl-carousel owl-theme">
+                <div class="hero-single" style="background: url(assets/img/hero-img.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 col-lg-8 mx-auto">
+                                <div class="hero-content text-center">
+                                    <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                        GYAN DEEP SR. SEC. SCHOOL
+                                    </h6>
+                                    <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                        Nurturing Tomorrow’s <span>Leaders</span> Today
+                                    </h1>
+                                    <p data-animation="fadeInLeft" data-delay=".75s">
+                                        Gyan Deep offers many opportunities for students to learn and grow, but the
+                                        greatest
+                                        strength comes from dedicated teachers guiding young minds through knowledge,
+                                        values, and creative exploration daily.
+                                    </p>
+                                    <div class="hero-btn justify-content-center" data-animation="fadeInUp"
+                                        data-delay="1s">
+                                        <a href="contact.html" class="theme-btn">Contact Us<i
+                                                class="fas fa-arrow-right-long"></i></a>
+                                        <a href="application-form.html" class="theme-btn theme-btn2">Admissions<i
+                                                class="fas fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-single" style="background: url(assets/img/hero-img-2.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 col-lg-8 mx-auto">
+                                <div class="hero-content text-center">
+                                    <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                        GYAN DEEP SR. SEC. SCHOOL
+                                    </h6>
+                                    <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                        Start Your Beautiful And <span>Bright</span> Future
+                                    </h1>
+                                    <p data-animation="fadeInLeft" data-delay=".75s">
+                                        Gyan Deep offers many opportunities for students to learn and grow, but the
+                                        greatest
+                                        strength comes from dedicated teachers guiding young minds through knowledge,
+                                        values, and creative exploration daily.
+                                    </p>
+                                    <div class="hero-btn justify-content-center" data-animation="fadeInUp"
+                                        data-delay="1s">
+                                        <a href="contact.html" class="theme-btn">Contact Us<i
+                                                class="fas fa-arrow-right-long"></i></a>
+                                        <a href="application-form.html" class="theme-btn theme-btn2">Admissions<i
+                                                class="fas fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-single" style="background: url(assets/img/hero-img-3.jpg)">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 col-lg-8 mx-auto">
+                                <div class="hero-content text-center">
+                                    <h6 class="hero-sub-title" data-animation="fadeInDown" data-delay=".25s">
+                                        GYAN DEEP SR. SEC. SCHOOL
+                                    </h6>
+                                    <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
+                                        Excellence in <span>Education</span>
+                                    </h1>
+                                    <p data-animation="fadeInLeft" data-delay=".75s">
+                                        Gyan Deep offers many opportunities for students to learn and grow, but the
+                                        greatest
+                                        strength comes from dedicated teachers guiding young minds through knowledge,
+                                        values, and creative exploration daily.
+                                    </p>
+                                    <div class="hero-btn justify-content-center" data-animation="fadeInUp"
+                                        data-delay="1s">
+                                        <a href="contact.html" class="theme-btn">Contact Us<i
+                                                class="fas fa-arrow-right-long"></i></a>
+                                        <a href="application-form.html" class="theme-btn theme-btn2">Admissions<i
+                                                class="fas fa-arrow-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hero slider end -->
+
+
+        <!-- feature area --
+        <div class="feature-area fa-negative">
+            <div class="col-xl-9 ms-auto">
+                <div class="feature-wrapper">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature-item">
+                                <span class="count">01</span>
+                                <div class="feature-icon">
+                                    <img src="assets/img/icon/scholarship.svg" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">Scholarship Facility</h4>
+                                    <p>It is a long established fact that a reader will be distracted.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature-item">
+                                <span class="count">02</span>
+                                <div class="feature-icon">
+                                    <img src="assets/img/icon/teacher.svg" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">Skilled Lecturers</h4>
+                                    <p>It is a long established fact that a reader will be distracted.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature-item">
+                                <span class="count">03</span>
+                                <div class="feature-icon">
+                                    <img src="assets/img/icon/library.svg" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">Book Library Facility</h4>
+                                    <p>It is a long established fact that a reader will be distracted.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature-item">
+                                <span class="count">04</span>
+                                <div class="feature-icon">
+                                    <img src="assets/img/icon/money.svg" alt="">
+                                </div>
+                                <div class="feature-content">
+                                    <h4 class="feature-title">Affordable Price</h4>
+                                    <p>It is a long established fact that a reader will be distracted.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        feature area end -->
+
+        <!-- image-slider-area -->
+        <div class="image-slider-area">
+            <div class="container">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="assets/img/homepage/14.png" alt="Campus Life"></div>
+                        <div class="slide"><img src="assets/img/homepage/15.png" alt="Sports Day"></div>
+                        <div class="slide"><img src="assets/img/homepage/16.png" alt="Classroom"></div>
+                        <div class="slide"><img src="assets/img/homepage/17.png" alt="Annual Function"></div>
+                        <div class="slide"><img src="assets/img/homepage/18.png" alt="Library"></div>
+                        <div class="slide"><img src="assets/img/homepage/19.png" alt="Labs"></div>
+                        <div class="slide"><img src="assets/img/homepage/20.png" alt="Cultural Fest"></div>
+                        <div class="slide"><img src="assets/img/homepage/21.png" alt="Celebration"></div>
+                        <div class="slide"><img src="assets/img/homepage/22.png" alt="Celebration"></div>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✅ Popup (Lightbox) -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="index.html" alt="">
+        </div>
+
+        <!-- about area -->
+        <div class="about-area py-120">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-left wow fadeInLeft" data-wow-delay=".25s">
+                            <div class="about-img">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <img class="img-1" src="assets/img/about/about-1.JPG" alt="">
+                                        <div class="about-experience mt-4">
+                                            <div class="about-experience-icon">
+                                                <img src="assets/img/icon/exchange-idea.svg" alt="">
+                                            </div>
+                                            <b class="text-start">30 Years Of <br> Nurturing Minds</b>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img class="" src="assets/img/about/about-3.JPG" alt="">
+                                        <img class="img-3 mt-4" src="assets/img/about/about-2.JPG" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right wow fadeInRight" data-wow-delay=".25s">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline"> GYAN Deep Sr. Sec. School</span>
+                                <h2 class="site-title">
+                                    A New <span>GENERATION</span> School
+                                </h2>
+                            </div>
+                            <p class="about-text">
+                                The GYAN DEEP SR. SEC. SCHOOL is an English-medium co-educational day school. The
+                                institution was founded and established by Mr. Sunil Gupta as an inspiration of our
+                                respected father Sh. Shiv Kumar Gupta under the guidance of our beloved mother Late Smt.
+                                Leelawati Gupta in 1993.</p>
+
+                            <div class="about-content">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="about-item">
+                                            <div class="about-item-content">
+                                                <p>The School provides an ideal atmosphere for learners to acquire and
+                                                    imbibe skills
+                                                    necessary for their physical, mental, social and intellectual
+                                                    development. Apart from
+                                                    providing quality education, the school also lays emphasis on making
+                                                    the children
+                                                    responsible citizens, so that the children learn to appreciate the
+                                                    needs of others, both
+                                                    inside and outside the school. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="about-quote">
+                                            <p>It is easy to recognize an outstanding student than it is to fully
+                                                articulate all that goes into the making of one.</p>
+                                            <i class="far fa-quote-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-bottom">
+                                <a href="about.html" class="theme-btn">Discover More<i
+                                        class="fas fa-arrow-right-long"></i></a>
+                                <div class="about-phone">
+                                    <div class="icon"><i class="fal fa-headset"></i></div>
+                                    <div class="number">
+                                        <span>Call Now</span>
+                                        <h6><a href="tel:+917290007691">+91-7290007691</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about area end -->
+
+
+
+        <!-- counter area -->
+        <div class="counter-area pt-20 pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!--<div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/course.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="counter" data-count="+" data-to="500" data-speed="3000">500</span>
+                                <h6 class="title">+ Total Cources </h6>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--<div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/graduation.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="counter" data-count="+" data-to="1900" data-speed="3000">1900</span>
+                                <h6 class="title">+ Our Students</h6>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--<div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/teacher-2.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="counter" data-count="+" data-to="750" data-speed="3000">750</span>
+                                <h6 class="title">+ Skilled Lecturers</h6>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!--<div class="counter-box">
+                            <div class="icon">
+                                <img src="assets/img/icon/award.svg" alt="">
+                            </div>
+                            <div>
+                                <span class="counter" data-count="+" data-to="30" data-speed="3000">30</span>
+                                <h6 class="title">+ Win Awards</h6>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- counter area end -->
+
+
+        <!-- portfolio-area -->
+        <div class="portfolio-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">GYAN DEEP SR. SEC. SCHOOL</span>
+                            <h2 class="site-title">Dream. Discover. <span>Grow.</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="assets/img/portfolio/admission.jpg" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-title-info">
+                                        <a href="admissions.html">
+                                            <h4 class="portfolio-title">Admissions</h4>
+                                        </a>
+                                    </div>
+                                    <a href="admissions.html" class="portfolio-btn"><i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="assets/img/portfolio/activity.jpg" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-title-info">
+                                        <a href="Activities.html">
+                                            <h4 class="portfolio-title">Activities</h4>
+                                        </a>
+                                    </div>
+                                    <a href="Activities.html" class="portfolio-btn"><i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="assets/img/portfolio/events.jpg" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-title-info">
+                                        <a href="Assembly-Activities.html">
+                                            <h4 class="portfolio-title">Achievers</h4>
+                                        </a>
+                                    </div>
+                                    <a href="Assembly-Activities.html" class="portfolio-btn"><i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="assets/img/portfolio/facilities.jpg" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-title-info">
+                                        <a href="facility.html">
+                                            <h4 class="portfolio-title">Facilities</h4>
+                                        </a>
+                                    </div>
+                                    <a href="facility.html" class="portfolio-btn"><i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="assets/img/portfolio/photo-gallery.jpg" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-title-info">
+                                        <a href="Sports-Events.html">
+                                            <h4 class="portfolio-title">Events</h4>
+                                        </a>
+                                    </div>
+                                    <a href="Sports-Events.html" class="portfolio-btn"><i
+                                            class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-item">
+                            <div class="portfolio-img">
+                                <img src="assets/img/portfolio/why-gyaandeep.jpeg" alt="">
+                            </div>
+                            <div class="portfolio-content">
+                                <div class="portfolio-info">
+                                    <div class="portfolio-title-info">
+                                        <a href="about.html">
+                                            <h4 class="portfolio-title">Why Gyandeep?</h4>
+                                        </a>
+                                    </div>
+                                    <a href="about.html" class="portfolio-btn"><i class="far fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-area end -->
+
+
+
+        <!-- video-area -->
+        <div class="video-area">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".25s">
+                        <div class="site-heading mb-3">
+                            <span class="site-title-tagline"><i class="fa-brands fa-youtube"></i> Youtube</span>
+                            <h2 class="site-title">
+                                Catch a Glimpse of<span> Student Life</span>
+                            </h2>
+                        </div>
+                        <p class="about-text">
+                            There are many ways of learning available, but the majority have missed the spark of
+                            creativity in some form, while we make it truly engaging with students that looks even more
+                            meaningful.</p>
+                        <a href="https://www.youtube.com/@gyandeepsrsecschool" target="_blank"
+                            class="theme-btn mt-30">See More<i class="fas fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="col-lg-4 wow fadeInRight" data-wow-delay=".25s">
+                        <div class="video-content" style="background-image: url(assets/img/video/0H2A8351.JPG);">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12">
+                                    <div class="video-wrapper">
+                                        <a class="play-btn popup-youtube"
+                                            href="https://www.youtube.com/watch?v=pxegA7c6MP0">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".25s">
+                        <div class="widget event-author">
+                            <h4 class="widget-title">News & Update</h4>
+                            <div class="event-author-info">
+                                <marquee behavior="scroll" direction="up" scrollamount="2">
+                                    <p>• Annual Sports Day scheduled for October 28th.</p>
+                                    <p>• Admission Open for the 2026-27 academic session.</p>
+                                    <p>• New library books have been added for students.</p>
+                                    <p>• Scholarship Program for Students (Nursery to Class 9) on December 29th.</p>
+                                    <p>
+                                        • Gyan Deep School Hosts Kids Winter Camp for 2-11 Year Olds: Dec 29 - Jan 9 –
+                                        Two weeks of excitement.
+                                        <a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank">
+                                            View on Instagram
+                                        </a>
+                                    </p>
+                                    <p>
+                                        • Vacancies are open only for female candidates.
+                                        <a href="https://gyandeepschool.org/join-the-gyan-deep-family.html"
+                                            target="_blank">
+                                            Apply Here
+                                        </a>
+                                    </p>
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- video-area end -->
+
+
+        <!-- team-area -->
+        <div class="team-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline"><i class="far fa-book-open-reader"></i> Guidance</span>
+                            <h2 class="site-title">Words from <span>Leadership</span></h2>
+                            <!--<p>It is a long established fact that a reader will be distracted by the readable content of
+                                a page when looking at its layout.</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".25s">
+                            <div class="team-img">
+                                <img src="assets/img/team/Chairperson%20Sir.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="chairmans-message.html">Chairman</a></h5>
+                                    <span>Shri Sunil Gupta</span>
+                                </div>
+                            </div>
+                            <a href="chairmans-message.html" target="_blank" class="team-social-btn">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".50s">
+                            <div class="team-img">
+                                <img src="assets/img/team/Director%20Ma_am.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="directors-message.html">Director</a></h5>
+                                    <span>Shmt Neera Gupta</span>
+                                </div>
+                            </div>
+                            <a href="directors-message.html" target="_blank" class="team-social-btn">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".50s">
+                            <div class="team-img">
+                                <img src="assets/img/team/Principal%20Ma_am.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="principals-message.html">Principal</a></h5>
+                                    <span>Deepika Prashar</span>
+                                </div>
+                            </div>
+                            <a href="principals-message.html" target="_blank" class="team-social-btn">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".75s">
+                            <div class="team-img">
+                                <img src="assets/img/team/Manager%20Ma_am.jpg" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="from-managers-desk.html">Manager</a></h5>
+                                    <span>Yashoda Rani</span>
+                                </div>
+                            </div>
+                            <a href="from-managers-desk.html" target="_blank" class="team-social-btn">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- team-area end -->
+
+
+
+        <!-- gallery-area -->
+        <div class="gallery-area pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline"><i class="far fa-book-open-reader"></i> Gallery</span>
+                            <h2 class="site-title">Our Photo <span>Gallery</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row popup-gallery">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay=".25s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8262.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8262.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8144.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8144.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay=".50s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8289.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8289.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8241.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8241.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay=".75s">
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8337.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8337.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8379.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8379.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-img">
+                                <img src="assets/img/gallery/0H2A8164.JPG" alt="">
+                            </div>
+                            <div class="gallery-content">
+                                <a class="popup-img gallery-link" href="assets/img/gallery/0H2A8164.JPG"><i
+                                        class="fal fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- gallery-area end -->
+
+
+        <!-- cta-area -->
+        <div class="cta-area">
+            <div class="container">
+                <div class="cta-wrapper">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 ms-lg-auto">
+                            <div class="cta-content">
+                                <h1>Get In Touch</h1>
+                                <p>We believe every child deserves a nurturing environment to grow, explore, and thrive.
+                                    If you’d like to know more about admissions, school life, or how we support student
+                                    development, we’d be delighted to hear from you.</p>
+                                <div class="cta-btn">
+                                    <a href="application-form.html" class="theme-btn">Admission Enquiry<i
+                                            class="fas fa-arrow-right-long"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cta-area end -->
+
+
+    </main>
+
+
+    <!-- footer area -->
+    <footer class="footer-area">
+        <div class="footer-shape">
+            <img src="assets/img/logo/Logo-GDSSS.png" alt="">
+        </div>
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-100 pb-70">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget-box about-us">
+                            <a href="index.html#" class="footer-logo">
+                                <img src="assets/img/logo/Logo-GDSSS.png" alt="">
+                            </a>
+                            <!--<p class="mb-3">
+                                We are many variations of passages available but the majority have suffered alteration
+                                in some form by injected humour words believable.
+                            </p>-->
+                            <ul class="footer-contact">
+                                <li><a href="tel:+919711700513"><i class="far fa-phone"></i> +91-9711700513,
+                                        +91-7290007691</a></li>
+                                <li><i class="far fa-map-marker-alt"></i> Sheetla Colony, Sector-5,
+                                    Gurgaon</li>
+                                <li>
+                                    <a href="mailto:query@gyandeepschool.org">
+                                        <i class="far fa-envelope"></i>
+                                        <span>query@gyandeepschool.org</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <ul class="footer-list">
+                                <li><a href="about.html"><i class="fas fa-caret-right"></i>About Us</a></li>
+                                <li><a href="https://drive.google.com/file/d/1K9HL7vC2rTTVe9TCrhD7SXW-fkcVueWM/view"><i
+                                            class="fas fa-caret-right"></i>CBSE Information</a></li>
+                                <li><a href="admissions.html"><i class="fas fa-caret-right"></i>Admissions</a></li>
+                                <li><a href="join-the-gyan-deep-family.html"><i class="fas fa-caret-right"></i>Join
+                                        Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Our Campus</h4>
+                            <ul class="footer-list">
+                                <li><a href="Sports-Events.html"><i class="fas fa-caret-right"></i>Events</a></li>
+                                <li><a href="Activities.html"><i class="fas fa-caret-right"></i>Activities</a></li>
+                                <li><a href="chairmans-message.html"><i class="fas fa-caret-right"></i>Leadership</a>
+                                </li>
+                                <li><a href="facility.html"><i class="fas fa-caret-right"></i>Facility Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget event-author">
+                            <h4 class="widget-title">News & Update</h4>
+                            <div class="event-author-info">
+                                <marquee behavior="scroll" direction="up" scrollamount="2">
+                                    <p>• Annual Sports Day scheduled for October 28th.</p>
+                                    <p>• Admission Open for the 2026-27 academic session.</p>
+                                    <p>• New library books have been added for students.</p>
+                                    <p>• Scholarship Program for Students (Nursery to Class 9) on December 29th.</p>
+                                    <p>
+                                        • Gyan Deep School Hosts Kids Winter Camp for 2-11 Year Olds: Dec 29 - Jan 9 –
+                                        Two weeks of excitement.
+                                        <a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank">
+                                            View on Instagram
+                                        </a>
+                                    </p>
+                                    <p>
+                                        • Vacancies are open only for female candidates.
+                                        <a href="https://gyandeepschool.org/join-the-gyan-deep-family.html"
+                                            target="_blank">
+                                            Apply Here
+                                        </a>
+                                    </p>
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <p class="copyright-text">
+                                &copy; <span id="date"></span> <a href="index.html#"> GYAN DEEP SR. SEC. SCHOOL © 2025. </a> All
+                                Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-md-6 align-self-center">
+                            <ul class="footer-social">
+                                <li><a href="https://www.facebook.com/GyanDeepSr.Sec.SchoolGurgaon/" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/@gyandeepsrsecschool" target="_blank"><i
+                                            class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+
+    <!-- scroll-top -->
+    <a href="index.html#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+    <!-- scroll-top end -->
+
+    <!-- Slider Script -->
+    <script>
+        let currentPosition = 0;
+        const slides = document.querySelector(".slides");
+        const totalSlides = document.querySelectorAll(".slide").length;
+        const visibleSlides = 4;
+
+        function moveSlide(direction) {
+            const slideWidth = slides.querySelector(".slide").offsetWidth;
+            const maxPosition = -(slideWidth * (totalSlides - visibleSlides));
+
+            currentPosition += direction * slideWidth;
+
+            if (currentPosition > 0) currentPosition = maxPosition;
+            else if (currentPosition < maxPosition) currentPosition = 0;
+
+            slides.style.transform = `translateX(${currentPosition}px)`;
+        }
+
+        // Auto-slide every 5s
+        setInterval(() => moveSlide(1), 5000);
+    </script>
+
+    <!-- ✅ JS for Popup -->
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.getElementById('lightbox-close');
+
+        document.querySelectorAll('.slide img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', e => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script>
+        // Wait for page to fully load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('popup').style.display = 'flex';
+            }, 10000); // 10 seconds after page load
+        });
+
+        // Close popup on button click
+        document.getElementById('closePopup').addEventListener('click', () => {
+            document.getElementById('popup').style.display = 'none';
+        });
+    </script>
+
+
+    <!-- js -->
+    <script data-cfasync="false" src="https://www.gyandeepschool.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl509604'},{'dcenter':'p3'},{'cp_id':'10744636'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>

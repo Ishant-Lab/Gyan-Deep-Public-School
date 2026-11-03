@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- title -->
+    <title>GYAN DEEP SR. SEC. SCHOOL</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/logo/gyandeep-logo.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        .gallery-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 250px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 10px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .close:hover {
+            color: #bbb;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                height: 200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="application-form.html" class="admission-btn-vertical">Admission</a>
+
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader-logo">
+            <img src="https://gyandeepschool.org/assets/img/logo/Logo-GDSSS.png" alt="School Logo">
+        </div>
+    </div>
+    <!-- preloader end -->
+
+
+
+
+    <!-- header area -->
+    <header class="header">
+        <!-- header top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-wrap">
+                    <div class="header-top-left">
+                        <div class="header-top-social">
+                            <span>Follow Us: </span>
+                            <a href="https://www.facebook.com/GyanDeepSr.Sec.SchoolGurgaon/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@gyandeepsrsecschool" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="header-top-right">
+                        <div class="header-top-contact">
+                            <ul>
+                                <li>
+                                    <a href="Sports-Events.html#"><i class="far fa-location-dot"></i> Sheetla Colony, Opp. Sector-5 Petrol
+                                        Pump, Gurgaon</a>
+                                </li>
+                                <!--<li>
+                                    <a href="https://live.themewild.com/cdn-cgi/l/email-protection#254c4b434a65405d44485549400b464a48"><i class="far fa-envelopes"></i> <span class="__cf_email__" data-cfemail="0b62656d644b6e736a667b676e25686466">query@gyandeepschool.org</span></a>
+                                </li>-->
+                                <li>
+                                    <a href="tel:+919711700513"><i class="far fa-phone-volume"></i> +91-9711700513</a>
+                                    <a href="tel:+917290007691"><i class="far fa-phone-volume"></i> +91-7290007691</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container position-relative">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo/Logo-GDSSS.png" alt="logo">
+                    </a>
+                    <div class="mobile-menu-right">
+                        <!--<div class="search-btn">
+                            <button type="button" class="nav-right-link search-box-outer"><i
+                                    class="far fa-search"></i></button>
+                        </div>-->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="Sports-Events.html#" data-bs-toggle="dropdown">About
+                                    Us</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="about.html">Gyan Deep Sr. Sec. School</a></li>
+                                    <li><a class="dropdown-item" href="about.html#why-gyandeep">Why Gyan Deep?</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="Sports-Events.html#">The Managment</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="chairmans-message.html">Chairman</a></li>
+                                            <li><a class="dropdown-item" href="directors-message.html">Director</a></li>
+                                            <li><a class="dropdown-item" href="principals-message.html">Principal</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="from-managers-desk.html">Manager</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://drive.google.com/file/d/1q620hTy3XE8dIqYUcQOGww4hM0H_iGIL/view">CBSE
+                                            Information</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
+
+                            <li class="nav-item"><a class="nav-link" href="facility.html">Facilities</a></li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="Activities.html" data-bs-toggle="dropdown">Student Life</a>
+                                <ul class="dropdown-menu fade-down">
+                                    <li><a class="dropdown-item" href="Festivals.html">Festivals</a></li>
+                                    <li><a class="dropdown-item" href="Celebrations.html">Celebrations</a></li>
+                                    <li><a class="dropdown-item" href="Summer-Camp.html">Summer Camp</a></li>
+                                    <li><a class="dropdown-item" href="Diwali-Fair.html">Diwali Fair</a></li>
+                                    <li><a class="dropdown-item" href="Colour-Day-Celebration.html">Colour Day
+                                            Celebration</a></li>
+                                    <li><a class="dropdown-item" href="Assembly-Activities.html">Assembly Activities</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="talent-expo.html">Talent Expo</a></li>
+                                    <li><a class="dropdown-item" href="Inter-School-Activity.html">Inter School
+                                            Activity</a></li>
+                                    <li><a class="dropdown-item" href="Sports-Events.html">Sports Events</a></li>
+                                    <li><a class="dropdown-item" href="University-Fair.html">University Fair</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link"
+                                    href="https://heyzine.com/flip-book/296da6cb68.html" target="_blank">School
+                                    Magazine</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="nav-right">
+                            <!--<div class="search-btn">
+                                <button type="button" class="nav-right-link search-box-outer"><i
+                                        class="far fa-search"></i></button>
+                            </div>-->
+                            <div class="nav-right-btn mt-2">
+                                <a href="application-form.html" class="theme-btn"><span
+                                        class="fal fa-pencil"></span>Admission Enquiry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header area end -->
+
+
+    <!-- popup search -->
+    <div class="search-popup">
+        <button class="close-search"><span class="far fa-times"></span></button>
+        <form action="Sports-Events.html#">
+            <div class="form-group">
+                <input type="search" name="search-field" placeholder="Search Here..." required>
+                <button type="submit"><i class="far fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+    <!-- popup search end -->
+
+
+
+    <main class="main">
+
+        <!-- portfolio-area -->
+        <div class="portfolio-area py-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">GYAN DEEP SR. SEC. SCHOOL</span>
+                            <h2 class="site-title">Sports Event</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="row g-3 justify-content-center">
+                    
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8494.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8549%202.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8579%202.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8606.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8636.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8650.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8704%202.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8712%202.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_7974.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8030.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8032.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8066.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8131.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8201.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8211.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8272.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8301.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/IMG_8351.webp" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/DSC_0012.JPG" alt="sports event"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/DSC_0013.JPG" alt="Sports Day"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/DSC_0014.JPG" alt="Classroom"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/DSC_0051.JPG" alt="Annual Function"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/DSC_0058.JPG" alt="Library"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/WhatsApp%20Image%202023-04-27%20at%2011.47.02%20AM%20(1).jpeg" alt="Labs"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/WhatsApp%20Image%202023-04-27%20at%2011.47.07%20AM.jpeg" alt="Cultural Fest"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6">
+                        <div class="gallery-item">
+                            <img src="assets/img/SPORTS/WhatsApp%20Image%202023-04-27%20at%2011.47.08%20AM%20(2).jpeg" alt="Celebration"
+                                onclick="openLightbox(this)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+
+    </main>
+
+
+
+    <!-- footer area -->
+    <footer class="footer-area">
+        <div class="footer-shape">
+            <img src="assets/img/logo/Logo-GDSSS.png" alt="">
+        </div>
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-100 pb-70">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget-box about-us">
+                            <a href="Sports-Events.html#" class="footer-logo">
+                                <img src="assets/img/logo/Logo-GDSSS.png" alt="">
+                            </a>
+                            <!--<p class="mb-3">
+                                We are many variations of passages available but the majority have suffered alteration
+                                in some form by injected humour words believable.
+                            </p>-->
+                            <ul class="footer-contact">
+                                <li><a href="tel:+919711700513"><i class="far fa-phone"></i> +91-9711700513,
+                                        +91-7290007691</a></li>
+                                <li><i class="far fa-map-marker-alt"></i> Sheetla Colony, Sector-5,
+                                    Gurgaon</li>
+                                <li>
+                                    <a href="mailto:query@gyandeepschool.org">
+                                        <i class="far fa-envelope"></i>
+                                        <span>query@gyandeepschool.org</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Quick Links</h4>
+                            <ul class="footer-list">
+                                <li><a href="about.html"><i class="fas fa-caret-right"></i> About Us</a></li>
+                                <li><a href="https://drive.google.com/file/d/1K9HL7vC2rTTVe9TCrhD7SXW-fkcVueWM/view"><i class="fas fa-caret-right"></i> CBSE Information</a></li>
+                                <li><a href="admissions.html"><i class="fas fa-caret-right"></i> Admissions</a></li>
+                                <li><a href="join-the-gyan-deep-family.html"><i class="fas fa-caret-right"></i>Join Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Our Campus</h4>
+                            <ul class="footer-list">
+                                <li><a href="Sports-Events.html"><i class="fas fa-caret-right"></i> Events</a></li>
+                                <li><a href="Activities.html"><i class="fas fa-caret-right"></i> Activities</a></li>
+                                <li><a href="chairmans-message.html"><i class="fas fa-caret-right"></i> Leadership</a></li>
+                                <li><a href="facility.html"><i class="fas fa-caret-right"></i> Facility Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="widget event-author">
+                            <h4 class="widget-title">News & Update</h4>
+                            <div class="event-author-info">
+                                <marquee behavior="scroll" direction="up" scrollamount="2">
+                                    <p>• Annual Sports Day scheduled for October 28th.</p>
+                                    <p>• Admission Open for the 2026-27 academic session.</p>
+                                    <p>• New library books have been added for students.</p>
+                                    <p>• Scholarship Program for Students (Nursery to Class 9) on December 29th.</p>
+                                    <p>
+                                        • Gyan Deep School Hosts Kids Winter Camp for 2-11 Year Olds: Dec 29 - Jan 9 –
+                                        Two weeks of excitement.
+                                        <a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank">
+                                            View on Instagram
+                                        </a>
+                                    </p>
+                                    <p>
+                                        • Vacancies are open only for female candidates.
+                                        <a href="https://gyandeepschool.org/join-the-gyan-deep-family.html"
+                                            target="_blank">
+                                            Apply Here
+                                        </a>
+                                    </p>
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <p class="copyright-text">
+                                &copy; <span id="date"></span> <a href="Sports-Events.html#"> GYAN DEEP SR. SEC. SCHOOL © 2025. </a> All
+                                Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-md-6 align-self-center">
+                            <ul class="footer-social">
+                                <li><a href="https://www.facebook.com/GyanDeepSr.Sec.SchoolGurgaon/" target="_blank"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/gyandeepsrsecschool" target="_blank"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/@gyandeepsrsecschool" target="_blank"><i
+                                            class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+
+    <!-- scroll-top -->
+    <a href="Sports-Events.html#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
+    <!-- scroll-top end -->
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById("lightbox").style.display = "block";
+            document.getElementById("lightbox-img").src = img.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+
+    <!-- js -->
+    <script data-cfasync="false" src="https://www.gyandeepschool.org/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/jquery.appear.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl509604'},{'dcenter':'p3'},{'cp_id':'10744636'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
